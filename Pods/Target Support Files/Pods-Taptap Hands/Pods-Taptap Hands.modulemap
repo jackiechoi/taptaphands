@@ -1,0 +1,6 @@
+framework module Pods_Taptap_Hands {
+  umbrella header "Pods-Taptap Hands-umbrella.h"
+
+  export *
+  module * { export * }
+}
