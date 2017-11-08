@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Taptap Hands
 //
-//  Created by Jackie Choi on 6/14/17.
+//  Created by Jackie Choi
 //  Copyright © 2017 Jackie Choi. All rights reserved.
 //
 
@@ -20,30 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
-        let branch: Branch = Branch.getInstance()
-        branch.initSession(launchOptions: launchOptions, andRegisterDeepLinkHandler: {params, error in
-            if error == nil {
-                // params are the deep linked params associated with the link that the user clicked -> was re-directed to this app
-                // params will be empty if no data found
-                // ... insert custom logic here ...
-                print(params as Any)
-            }
-        })
+        Branch.getInstance().setDebug()
         
-//        //Onboarding screen
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        let storyboard = UIStoryboard(name:"Main", bundle: nil)
-//        var vc = UIViewController
-//        
-//        if (UserDefaults.standard.value(forKey: "id") as? String) == nil {
-//            //no id match -> show onboarding screen
-//            vc = storyboard.
-//            //else -> main game screen
-//        }
-//        
-//        self.window?.rootViewController = vc
-//        self.window?.makeKeyAndVisible()
-        
+        Branch.getInstance().initSession(launchOptions: launchOptions) { (params, error) in
+            // do stuff with deep link data (nav to page, display content, etc)
+            print(params as? [String: AnyObject] ?? {})
+        }
         Branch.getInstance().setIdentity("jchoi")
         
         return true

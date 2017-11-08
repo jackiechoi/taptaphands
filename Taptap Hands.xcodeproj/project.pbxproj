@@ -21,6 +21,7 @@
 		3B75ECB01EF59216000A3E97 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B75ECAD1EF59216000A3E97 /* MobileCoreServices.framework */; };
 		3B96A9FD1EF6526D003C0B37 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B96A9FC1EF6526D003C0B37 /* Social.framework */; };
 		3B96A9FE1EF65287003C0B37 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B75ECA11EF32583000A3E97 /* EndViewController.swift */; };
+		D24B99CE1F3E53C10028C5C2 /* Taptap Hands.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = D2E1C8271F181B470090D44C /* Taptap Hands.entitlements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -163,12 +164,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Jackie Choi";
 				TargetAttributes = {
 					3B75EC891EF16A8E000A3E97 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = R63EM248DP;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
@@ -204,6 +206,7 @@
 				3B75EC981EF16A8E000A3E97 /* LaunchScreen.storyboard in Resources */,
 				3B75EC951EF16A8E000A3E97 /* Assets.xcassets in Resources */,
 				3B75EC931EF16A8E000A3E97 /* Main.storyboard in Resources */,
+				D24B99CE1F3E53C10028C5C2 /* Taptap Hands.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +304,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -309,7 +314,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -351,7 +360,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -359,7 +370,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -398,9 +413,10 @@
 				INFOPLIST_FILE = "Taptap Hands/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jcdevelopment.Taptap-Hands";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jc.Taptap-Hands";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "/Users/jackiechoi/Documents/Xcode Projects/Taptap Hands/Branch.framework/Headers";
 			};
 			name = Debug;
@@ -419,9 +435,10 @@
 				INFOPLIST_FILE = "Taptap Hands/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jcdevelopment.Taptap-Hands";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jc.Taptap-Hands";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "/Users/jackiechoi/Documents/Xcode Projects/Taptap Hands/Branch.framework/Headers";
 			};
 			name = Release;

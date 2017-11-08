@@ -4,8 +4,8 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:f2au.app.link</string>
-		<string>applinks:f2au-alternate.app.link</string>
+		<string>applinks:jchoi.app.link</string>
+		<string>applinks:jchoi-alternate.app.link</string>
 	</array>
 </dict>
 </plist>

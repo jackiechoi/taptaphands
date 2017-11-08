@@ -23,7 +23,7 @@ class GameViewController: UIViewController {
     var startInt = 3
     var startTimer = Timer()
     
-    var gameInt = 10
+    var gameInt = 13
     var gameTimer = Timer()
     var recordData:String!
     
@@ -62,7 +62,7 @@ class GameViewController: UIViewController {
         scoreLabel.text = String(tapInt)
     }
     
-    func startGameTimer() {
+    @objc func startGameTimer() {
         startInt = startInt - 1
         button.setTitle(String(startInt), for: .normal)
         
@@ -80,7 +80,7 @@ class GameViewController: UIViewController {
         
     }
     
-    func game() {
+    @objc func game() {
         gameInt -= 1
         timeLabel.text = String(gameInt)
         
@@ -114,7 +114,7 @@ class GameViewController: UIViewController {
         }
     }
     
-    func end() {
+    @objc func end() {
         //switch off to the EndViewController
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "endGame") as! EndViewController
         
