@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
     
     var tapInt = 0
     
-    var startInt = 3
+    var startInt = 13
     var startTimer = Timer()
     
     var gameInt = 13
@@ -42,7 +42,7 @@ class GameViewController: UIViewController {
         
         startTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.startGameTimer), userInfo: nil, repeats: true)
         
-        gameInt = 3
+        gameInt = 5
         timeLabel.text = String(gameInt)
         
         let userDefaults = Foundation.UserDefaults.standard
